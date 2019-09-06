@@ -249,7 +249,7 @@ install_node(){
 	# 启用supervisord
 	supervisorctl shutdown
 	#某些机器没有echo_supervisord_conf 
-	wget -N -P  /etc/supervisor/ --no-check-certificate  https://raw.githubusercontent.com/mmmwhy/ss-panel-and-ss-py-mu/master/supervisord.conf
+	wget -N -P  /etc/supervisor/ --no-check-certificate  https://raw.githubusercontent.com/RManOfCN/shadowsocks/manyuser/supervisord.conf
 	supervisord
 	#iptables
 	iptables -F
